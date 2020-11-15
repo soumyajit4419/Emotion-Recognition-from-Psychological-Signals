@@ -16,13 +16,13 @@ def getFourierData(type='eeg'):
     """
     data = pickle.load(open(path + 'FourierData.pkl', 'rb'))
     if(type == 'eeg'):
-        return data[:, :70]
+        return data[:, :70].astype(np.float32)
     elif(type == 'ecg'):
-        return data[:, 70:80]
+        return data[:, 70:80].astype(np.float32)
     elif(type == 'gsr'):
-        return data[:, 80:85]
+        return data[:, 80:85].astype(np.float32)
     elif(type == 'all'):
-        return data
+        return data.astype(np.float32)
     else:
         return "Invalid Choice"
 
@@ -37,13 +37,13 @@ def getWaveletData(type='eeg'):
     """
     data = pickle.load(open(path + 'WaveletData.pkl', 'rb'))
     if(type == 'eeg'):
-        return data[:, :70]
+        return data[:, :70].astype(np.float32)
     elif(type == 'ecg'):
-        return data[:, 70:80]
+        return data[:, 70:80].astype(np.float32)
     elif(type == 'gsr'):
-        return data[:, 80:85]
+        return data[:, 80:85].astype(np.float32)
     elif(type == 'all'):
-        return data
+        return data.astype(np.float32)
     else:
         return "Invalid Choice"
 
