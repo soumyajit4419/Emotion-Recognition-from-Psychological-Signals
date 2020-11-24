@@ -7,7 +7,9 @@
 It is difficult to look at the EEG signal and identify the state of Human mind. In this problem statement a classifier needs to be trained with AMIGOS dataset to predict the state of mind. The state of mind is predicted in terms of valence, arousal. which can further be used to predict the state of mind in terms of expression.
 
 <br>
-<img src ="images/image.gif"  width=600 height=400>  
+<center>
+<img src ="Assets/image.gif"  width=600 height=400>  
+</center>
 <br>
 
 ## PROCEDURE TO SOLVE THE PROBLEM:-
