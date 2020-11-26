@@ -20,7 +20,7 @@ def combine_fourier(data='std'):
             ll.append(data)
         return np.concatenate(ll)
     elif(data == 'entropy'):
-        all_user_data = os.listdir('./FourierData/Data/UserEntropyData/')
+        all_user_data = os.listdir('./FourierData/UserEntropyData/')
         ll = []
         for i in all_user_data:
             data = pickle.load(
@@ -65,5 +65,5 @@ def combine_labels():
 
 
 pickle.dump(combine_wavelet(data='entropy'), open('./WaveletData.pkl', 'wb'))
-pickle.dump(combine_fourier(data='std'), open('./FourierData.pkl', 'wb'))
+pickle.dump(combine_fourier(data='entropy'), open('./FourierData.pkl', 'wb'))
 pickle.dump(combine_labels(), open('./UserLabels.pkl', 'wb'))
