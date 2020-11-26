@@ -1,26 +1,69 @@
-import pandas as pd 
-import numpy as np 
+import pandas as pd
+import numpy as np
 import pickle
 import os
 
-path = './Dataset/'
-all_dataset = os.listdir(path)
+
+def combine_fourier(data='std'):
+    """
+    Parameter: Data(type = 'str')
+               The data to concatinate and form array
+    Return:   Array
+              Concatenated Data
+    """
+    if(data == 'std'):
+        all_user_data = os.listdir('./FourierData/UserStdData/')
+        ll = []
+        for i in all_user_data:
+            data = pickle.load(
+                open('./FourierData/UserStdData/'+i+'/user_features.pkl', 'rb'))
+            ll.append(data)
+        return np.concatenate(ll)
+    elif(data == 'entropy'):
+        all_user_data = os.listdir('./FourierData/Data/UserEntropyData/')
+        ll = []
+        for i in all_user_data:
+            data = pickle.load(
+                open('./FourierData/UserEntropyData/'+i+'/user_features.pkl', 'rb'))
+            ll.append(data)
+        return np.concatenate(ll)
 
 
-def combineData(path):
+def combine_wavelet(data='std'):
+    """
+    Parameter: Data(type = 'str')
+               The data to concatinate and form array
+    Return:   Array
+              Concatenated Data
+    """
+    if(data == 'std'):
+        all_user_data = os.listdir('./WaveletData/UserStdData/')
+        ll = []
+        for i in all_user_data:
+            data = pickle.load(
+                open('./WaveletData/UserStdData/'+i+'/user_features.pkl', 'rb'))
+            ll.append(data)
+        return np.concatenate(ll)
+    elif(data == 'entropy'):
+        all_user_data = os.listdir('./WaveletData/UserEntropyData/')
+        ll = []
+        for i in all_user_data:
+            data = pickle.load(
+                open('./WaveletData/UserEntropyData/'+i+'/user_features.pkl', 'rb'))
+            ll.append(data)
+        return np.concatenate(ll)
+
+
+def combine_labels():
+    all_labels = os.listdir('./UserLabels')
     ll = []
-    all_data = os.listdir(path)
-    for user_data in all_data:
-        file = os.listdir(path + user_data)
-        arr = pickle.load(open(path + user_data + '/'+ file[0],'rb'))
-        ll.append(arr)
-    return ll
+    for i in all_labels:
+        data = pickle.load(
+            open('./UserLabels/'+i+'/user_labels.pkl', 'rb'))
+        ll.append(data)
+    return np.concatenate(ll)
 
 
-for dataset in all_dataset:
-    data_path = path + dataset + '/'
-    ll = combineData(data_path)
-    arr_data = np.concatenate(ll)
-    f_name = dataset + '.pkl'
-    pickle.dump(arr_data,open(f_name,'wb'))
-
+pickle.dump(combine_wavelet(data='entropy'), open('./WaveletData.pkl', 'wb'))
+pickle.dump(combine_fourier(data='std'), open('./FourierData.pkl', 'wb'))
+pickle.dump(combine_labels(), open('./UserLabels.pkl', 'wb'))

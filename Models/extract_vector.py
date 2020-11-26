@@ -6,12 +6,12 @@ import os
 path = '../Dataset/'
 
 
-def getFourierData(type='eeg'):
+def getFourierStdData(type='eeg'):
     """
-    Input: type(string) the type of data 
-           options: eeg / ecg / gsr / all 
+    Input: type(string) the type of data
+           options: eeg / ecg / gsr / all
 
-    Output: data(If Exits) 
+    Output: data(If Exits)
             2D array of data
     """
     data = pickle.load(open(path + 'FourierData.pkl', 'rb'))
@@ -22,12 +22,12 @@ def getFourierData(type='eeg'):
     elif(type == 'gsr'):
         return data[:, 80:85].astype(np.float32)
     elif(type == 'all'):
-        return data.astype(np.float32)
+        return data[:, :].astype(np.float32)
     else:
         return "Invalid Choice"
 
 
-def getWaveletData(type='eeg'):
+def getWaveletStdData(type='eeg'):
     """
     Input: type(string) the type of data
            options: eeg / ecg / gsr / all
@@ -43,7 +43,7 @@ def getWaveletData(type='eeg'):
     elif(type == 'gsr'):
         return data[:, 80:85].astype(np.float32)
     elif(type == 'all'):
-        return data.astype(np.float32)
+        return data.astype(np.float)
     else:
         return "Invalid Choice"
 
@@ -65,3 +65,18 @@ def getLabelData(type='all'):
         return data
     else:
         return "Invalid Choice"
+
+
+def getWaveletEntropyData():
+    """
+    Input: "
+
+    Output: Wavelet Combined Entropy Data
+    """
+    data = pickle.load(open(path + 'WaveletData.pkl', 'rb'))
+    return data.astype(np.float)
+
+
+def getFourierEntropyData():
+    data = pickle.load(open(path + 'FourierData.pkl', 'rb'))
+    return data.astype(np.float)
