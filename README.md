@@ -1,6 +1,6 @@
 # Emotion-classification-Using EEG Data
-## AMIGOS DATASET (A dataset for affect, personality and mood research on individuals and groups)
 
+## AMIGOS DATASET (A dataset for affect, personality and mood research on individuals and groups)
 
 ## PROBLEM STATEMENT:-
 
@@ -33,23 +33,26 @@ The AMIGOS dataset consists of the participants' profiles (anonymized participan
 
 ## FINDING THE FEATURES:-
 
-In this assignment, Wavelet transform and Fast Fourier Transform is used  to decompose the each channel data into the five features i.e :-
+Wavelet transform and Fast Fourier Transform is used to decompose the each channel data into the five features i.e :-
 
-• Delta (< 4 Hz)
-• Theta (5-7 Hz)
-• Alpha (8-15 Hz)
-• Beta (16-31 Hz)
-• Gamma (> 32 Hz)
+- **Delta (< 4 Hz)**
+- **Theta (5-7 Hz)**
+- **Alpha (8-15 Hz)**
+- **Beta (16-31 Hz)**
+- **Gamma (> 32 Hz)**
 
-<!-- 
-### REDUCING THE DIMENSION
+Energy and Entropy is computed for each feature band from each channel
 
-The dimension can be reduced using one of the below mention method:-
+- **For wavelet features `Total Wavelet Entropy` is calculated**
+- **For fourier features `Spectral Entropy` is calculated**
 
-1. Standard Deviation
-2. Mean
-3. Variance
-4. Median
-   But in this assignment Standard Deviation is used because it describe the devaition of each
-   EEG Band power density properly given by the equation below. -->
+## Usage
 
+- `DataConversion`: Code to convert the amigos dataset from `matlab files` into `csv files`
+- `Dataset`: `Transformed data` to all users in `pickle` format
+- `Fourier`: Code for `fourier transformation`
+- `Wavelet`: Code for `wavelet transformation`
+- `Src`: Code to apply the wavelet and fourier transformation on raw data and store the data into dataset
+- `Models`: Code for different `Machine Learning` and `Deep Learning` `methods` applied
+
+## Contributers
