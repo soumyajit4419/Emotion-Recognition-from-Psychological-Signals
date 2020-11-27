@@ -52,7 +52,7 @@ Fourier Transformation is one of the techniques to reveal the frequency contents
 
 <br>
 <center>
-<img src ="Assets/frequencytransform.PNG"  width=600 height=400>  
+<img src ="Assets/frequencytransform.PNG"  width=800 height=500>  
 </center>
 <br>
 
