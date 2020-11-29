@@ -61,6 +61,8 @@ def getLabelData(type='all'):
         return data[:, :1]
     elif(type == 'valence'):
         return data[:, 1:2]
+    elif(type == 'ValAr'):
+        return data[:, 0:2]
     elif(type == 'all'):
         return data
     else:
