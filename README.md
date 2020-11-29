@@ -55,4 +55,7 @@ Energy and Entropy is computed for each feature band from each channel
 - `Src`: Code to apply the wavelet and fourier transformation on raw data and store the data into dataset
 - `Models`: Code for different `Machine Learning` and `Deep Learning` `methods` applied
 
+## Results
+
+
 ## Contributers
