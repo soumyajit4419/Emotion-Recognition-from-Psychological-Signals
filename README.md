@@ -46,6 +46,16 @@ Energy and Entropy is computed for each feature band from each channel
 - **For wavelet features `Total Wavelet Entropy` is calculated**
 - **For fourier features `Spectral Entropy` is calculated**
 
+### Fourier Transformation :- 
+
+Fourier Transformation is one of the techniques to reveal the frequency contents of the EEG signals at each time point. 
+
+<br>
+<center>
+<img src ="Assets/frequencytransform.PNG"  width=800 height=500>  
+</center>
+<br>
+
 ## Usage
 
 - `DataConversion`: Code to convert the amigos dataset from `matlab files` into `csv files`
