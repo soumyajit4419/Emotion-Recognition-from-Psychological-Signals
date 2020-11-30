@@ -76,9 +76,14 @@ def getWaveletEntropyData():
     Output: Wavelet Combined Entropy Data
     """
     data = pickle.load(open(path + 'WaveletData.pkl', 'rb'))
-    return data.astype(np.float)
+    return data.astype(np.float32)
 
 
 def getFourierEntropyData():
+    """
+    Input: "
+
+    Output: Fourier Combined Entropy Data
+    """
     data = pickle.load(open(path + 'FourierData.pkl', 'rb'))
-    return data.astype(np.float)
+    return data.astype(np.float32)
