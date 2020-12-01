@@ -12,9 +12,17 @@ The EEG signal is first decomposed using wavelet decomposition scheme into wavel
 
 After extracting the features of the EEG signal, classification is done.
 
+## Output of Wavelet Transform:-
+
+The outputs A and D are the reconstruction wavelet coefficients:
+
+A:  The approximation output, which is the low frequency content of the input signal component.
+
+D:  The multidimensional output, which gives the details, or the high frequency components, of the input signal at various levels (up to level 6).
+
 <br>
 <center>
-<img src ="Assets/wavelettransform.jpg"  width=800 height=500>  
+<img src ="../Assets/wavelettransform.jpg"  width=800 height=500>  
 </center>
 <br>
 

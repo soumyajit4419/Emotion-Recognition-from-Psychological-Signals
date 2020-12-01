@@ -14,7 +14,7 @@ You can find more information on the FFT functions used in the reference here, b
 
 <br>
 <center>
-<img src ="Assets/frequencytransform.PNG"  width=800 height=500>  
+<img src ="../Assets/frequencytransform.PNG"  width=800 height=500>  
 </center>
 <br>
 
