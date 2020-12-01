@@ -7,6 +7,11 @@ Types of Wavelet Transform is divided into 2 classes:
 - **Continuous Wavelet Transform (CWT)**
 - **Discrete Wavelet Transform (DWT)**
 
+
+The EEG signal is first decomposed using wavelet decomposition scheme into wavelet coefficients using db3 (level = 3) or db4 (level = 4) for reducing signal dimension. These decomposed coefficients are used as features wchich describes the signal. 
+
+After extracting the features of the EEG signal, classification is done.
+
 <br>
 <center>
 <img src ="Assets/wavelettransform.jpg"  width=800 height=500>  
