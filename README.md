@@ -57,7 +57,7 @@ Energy and Entropy is computed for each feature band from each channel
 
 ## Results
 
-## Entropy Results
+### Results on Valence and Arousal
 
 | **Preprocessing Technique**      | **Methods** | **Valence(Acc)** | **Arousal(Acc)** |
 | -------------------------------- | ----------- | ---------------- | ---------------- |
@@ -70,6 +70,9 @@ Energy and Entropy is computed for each feature band from each channel
 |                                  | `ANN`       | `0.675`          | `0.689`          |
 |                                  |             |                  |                  |
 |                                  | `SVC`       | `0.655`          | `0.668`          |
+|                                  |             |                  |                  |
+| `Fast Fourier Transformation`    |             |                  |                  |
+|                                  | `CNN`       | `0.00`           | `0.00`           |
 |                                  |             |                  |                  |
 
 ## Contributers
