@@ -59,20 +59,27 @@ Energy and Entropy is computed for each feature band from each channel
 
 ### Results on Valence and Arousal
 
-| **Preprocessing Technique**      | **Methods** | **Valence(Acc)** | **Arousal(Acc)** |
-| -------------------------------- | ----------- | ---------------- | ---------------- |
-| `Wavelet(Total Wavelet Entropy)` |             |                  |                  |
-|                                  | `ANN`       | `0.627`          | `0.714`          |
-|                                  |             |                  |                  |
-|                                  | `SVC`       | `0.638`          | `0.726`          |
-|                                  |             |                  |                  |
-| `Fourier(Spectral Entropy)`      |             |                  |                  |
-|                                  | `ANN`       | `0.675`          | `0.689`          |
-|                                  |             |                  |                  |
-|                                  | `SVC`       | `0.655`          | `0.668`          |
-|                                  |             |                  |                  |
-| `Fast Fourier Transformation`    |             |                  |                  |
-|                                  | `CNN`       | `0.00`           | `0.00`           |
-|                                  |             |                  |                  |
+| **Preprocessing Technique**             | **Methods** | **Valence(Acc)** | **Arousal(Acc)** |
+| --------------------------------------- | ----------- | ---------------- | ---------------- |
+| `Wavelet(Total Wavelet Entropy)`        |             |                  |                  |
+|                                         | `ANN`       | `0.627`          | `0.714`          |
+|                                         |             |                  |                  |
+|                                         | `SVC`       | `0.638`          | `0.726`          |
+|                                         |             |                  |                  |
+| `Fourier(Spectral Entropy)`             |             |                  |                  |
+|                                         | `ANN`       | `0.675`          | `0.689`          |
+|                                         |             |                  |                  |
+|                                         | `SVC`       | `0.655`          | `0.668`          |
+|                                         |             |                  |                  |
+| `Sort Time Fast Fourier Transformation` |             |                  |                  |
+|                                         | `CNN`       | `0.94`           | `0.96`           |
+|                                         |             |                  |                  |
 
 ## Contributers
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/soumyajit4419"><img src="https://avatars2.githubusercontent.com/u/46092576?s=460&u=32c24b6d0308f5fdfff2ab740a9f525894edb582&v=4" width="100px;" alt=""/><br /><sub><b>Soumyajit Behera</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/Rahul1582"><img src="https://avatars2.githubusercontent.com/u/47784845?s=400&u=1e9898b8c4b762fcda1f37864c16b5de11f885ce&v=4" width="100px;" alt=""/><br /><sub><b>Rahul Kumar Patro</b></sub></a><br /></td>
+  </tr>
+</table>
