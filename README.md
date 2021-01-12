@@ -71,7 +71,7 @@ Energy and Entropy is computed for each feature band from each channel
 |                                         |             |                  |                  |
 |                                         | `SVC`       | `0.655`          | `0.668`          |
 |                                         |             |                  |                  |
-| `Sort Time Fast Fourier Transformation` |             |                  |                  |
+| `Short Time Fast Fourier Transformation` |             |                  |                  |
 |                                         | `CNN`       | `0.94`           | `0.96`           |
 |                                         |             |                  |                  |
 
