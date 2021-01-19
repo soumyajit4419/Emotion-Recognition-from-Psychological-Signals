@@ -59,21 +59,24 @@ Energy and Entropy is computed for each feature band from each channel
 
 ### Results on Valence and Arousal
 
-| **Preprocessing Technique**             | **Methods** | **Valence(Acc)** | **Arousal(Acc)** |
-| --------------------------------------- | ----------- | ---------------- | ---------------- |
-| `Wavelet(Total Wavelet Entropy)`        |             |                  |                  |
-|                                         | `ANN`       | `0.627`          | `0.714`          |
-|                                         |             |                  |                  |
-|                                         | `SVC`       | `0.638`          | `0.726`          |
-|                                         |             |                  |                  |
-| `Fourier(Spectral Entropy)`             |             |                  |                  |
-|                                         | `ANN`       | `0.675`          | `0.689`          |
-|                                         |             |                  |                  |
-|                                         | `SVC`       | `0.655`          | `0.668`          |
-|                                         |             |                  |                  |
+| **Preprocessing Technique**              | **Methods** | **Valence(Acc)** | **Arousal(Acc)** |
+| ---------------------------------------- | ----------- | ---------------- | ---------------- |
+| `Wavelet(Total Wavelet Entropy)`         |             |                  |                  |
+|                                          | `ANN`       | `0.627`          | `0.714`          |
+|                                          |             |                  |                  |
+|                                          | `SVC`       | `0.638`          | `0.726`          |
+|                                          |             |                  |                  |
+| `Fourier(Spectral Entropy)`              |             |                  |                  |
+|                                          | `ANN`       | `0.675`          | `0.689`          |
+|                                          |             |                  |                  |
+|                                          | `SVC`       | `0.655`          | `0.668`          |
+|                                          |             |                  |                  |
 | `Short Time Fast Fourier Transformation` |             |                  |                  |
-|                                         | `CNN`       | `0.94`           | `0.96`           |
-|                                         |             |                  |                  |
+|                                          | `CNN`       | `0.94`           | `0.96`           |
+|                                          |             |                  |                  |
+| `Fusion of Wavelet and Fourier with PCA` |             |                  |                  |
+|                                          | `SVC`       | `0.70`           | `0.75`           |
+|                                          |             |                  |                  |
 
 ## Contributers
 
