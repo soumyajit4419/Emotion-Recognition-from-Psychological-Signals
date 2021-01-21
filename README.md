@@ -73,7 +73,7 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |             |                  |                  |
 | `Fusion of Wavelet and Fourier with PCA` |             |                  |                  |
 |                                          | `SVC`       | `0.67`           | `0.77`           |
-|                                          | `RVC`       | `0.81`           | `0.92`           |
+|                                          | `RVC`       | `0.62`           | `0.78`           |
 |                                          |             |                  |                  |
 | `Short Time Fast Fourier Transformation` |             |                  |                  |
 |                                          | `CNN 1D`    | `0.94`           | `0.96`           |
