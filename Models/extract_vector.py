@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import os
 
-path = '../Dataset/'
+path = '../Dataset/EntropyCompleteDataset/'
 
 
 def getFourierStdData(type='eeg'):
@@ -56,7 +56,7 @@ def getLabelData(type='all'):
     Output: data(If Exits)
             2D array of data
     """
-    data = pickle.load(open(path + 'UserLabels.pkl', 'rb'))
+    data = pickle.load(open('../Dataset/UserLabels.pkl', 'rb'))
     if(type == 'arousal'):
         return data[:, :1]
     elif(type == 'valence'):
