@@ -61,8 +61,14 @@ def getLabelData(type='all'):
         return data[:, :1]
     elif(type == 'valence'):
         return data[:, 1:2]
+    elif(type == 'dominance'):
+        return data[:, 2:3]
+    elif(type == 'liking'):
+        return data[:, 3:4]
     elif(type == 'ValAr'):
         return data[:, 0:2]
+    elif(type == 'allfour'):
+        return data[:, 0:4]
     elif(type == 'all'):
         return data
     else:

@@ -59,25 +59,39 @@ Energy and Entropy is computed for each feature band from each channel
 
 ### Results on Valence and Arousal
 
-| **Preprocessing Technique**              | **Methods** | **Valence(Acc)** | **Arousal(Acc)** |
-| ---------------------------------------- | ----------- | ---------------- | ---------------- |
-| `Wavelet(Total Wavelet Entropy)`         |             |                  |                  |
-|                                          | `ANN`       | `0.627`          | `0.714`          |
-|                                          |             |                  |                  |
-|                                          | `SVC`       | `0.61`           | `0.78`           |
-|                                          |             |                  |                  |
-| `Fourier(Spectral Entropy)`              |             |                  |                  |
-|                                          | `ANN`       | `0.675`          | `0.689`          |
-|                                          |             |                  |                  |
-|                                          | `SVC`       | `0.66`           | `0.72`           |
-|                                          |             |                  |                  |
-| `Fusion of Wavelet and Fourier with PCA` |             |                  |                  |
-|                                          | `SVC`       | `0.67`           | `0.77`           |
-|                                          | `RVC`       | `0.62`           | `0.78`           |
-|                                          |             |                  |                  |
-| `Short Time Fast Fourier Transformation` |             |                  |                  |
-|                                          | `CNN 1D`    | `0.94`           | `0.96`           |
-|                                          | `CNN 2D`    | `0.97`           | `0.98`           |
+| **Preprocessing Technique**              | **Methods** |                  |    **Arousal**    | **Valence**      |   **Dominance)**   |    **Liking**   |
+|:----------------------------------------:|:-----------:|:----------------:| :----------------:|:----------------:| :----------------: |:----------------:
+| `Wavelet(Total Wavelet Entropy)`         |             |                  |                   |                  |                    |                 |
+|                                          |  `ANN`      |    Accuracy      |      `71.4`       |      `62.7`      |                    |                 |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |   `SVC`     |    Accuracy      |        `75`       |       `61`       |      `61.6`        |    `78.89`      |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |             |    K-Fold CV     |       `74.6`      |      `63.05`     |      `60.88`       |     `77.6`      |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |             |      LOOCV       |       `75.7`      |       `65.2`     |      `61.6`        |      `76.8`     |
+| `Fourier(Spectral Entropy)`              |             |                  |                   |                  |                    |                 |
+|                                          |  `ANN`      |     Accuracy     |       `68.9`      |        `67.5`    |                    |                 |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |  `SVC`      |     Accuracy     |        `72`       |       `63.2`     |       `64.8`       |     `69.4`      |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |             |     K-Fold CV    |       `74.8`      |       `60.7`     |        `63.2`      |      `71.3`     |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |             |      LOOCV       |       `76.6`      |        `61.8`    |       `61.3`       |     `72.1`      |
+|                                          |             |                  |                   |                  |                    |                 |
+| `Fusion of Wavelet and Fourier with PCA` |             |                  |                   |                  |                    |                 |
+|                                          | `SVC`       |    Accuracy      |      `79.3`       |        `64.08`   |       `62.5`       |     `76.2`      |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |             |    K-Fold CV     |      `77.1`       |      `64.04`     |     `61.3`         |    `76.3`       |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          |             |     LOOCV        |      `76.8`       |        `63.1`    |       `61`         |   `76.8`        |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          | `RVC`       |      Accuracy    |        `77.4`     |  `61.3`          |        `59`        |      `78`       |
+|                                          |             |                  |                   |                  |                    |                 |
+| `Short Time Fast Fourier Transformation` |             |                  |                   |                  |                    |                 |
+|                                          | `CNN 1D`    |     Accuracy     |         `96`      |    `94`          |                    |                 |
+|                                          |             |                  |                   |                  |                    |                 |
+|                                          | `CNN 2D`    |     Accuracy     |         `98`      |     `97`         |                    |                 |
 
 ## Contributers
 
