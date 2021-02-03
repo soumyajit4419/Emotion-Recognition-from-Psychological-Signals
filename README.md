@@ -57,7 +57,7 @@ Energy and Entropy is computed for each feature band from each channel
 
 ## Results
 
-### Results on Valence and Arousal
+### Results on Arousal,Valence,Dominance And Liking:-
 
 | **Preprocessing Technique**              | **Methods** |                  |    **Arousal**    | **Valence**      |   **Dominance**   |    **Liking**   |
 |:----------------------------------------:|:-----------:|:----------------:| :----------------:|:----------------:| :----------------: |:----------------:
