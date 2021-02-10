@@ -62,7 +62,7 @@ Energy and Entropy is computed for each feature band from each channel
 |       **Preprocessing Technique**        | **Methods** | **Metrics** | **Arousal** | **Valence** | **Dominance** | **Liking** |
 | :--------------------------------------: | :---------: | :---------: | :---------: | :---------: | :-----------: | :--------: |
 |     `Wavelet(Total Wavelet Entropy)`     |             |             |             |             |               |            |
-|                                          |    `ANN`    | `Accuracy`  |   `71.4`    |   `62.7`    |               |            |
+|                                          |    `ANN`    | `Accuracy`  |   `73.5`    |   `64.7`    |   `60.08`     |  `76.3`    |
 |                                          |             |             |             |             |               |            |
 |                                          |    `SVC`    | `Accuracy`  |    `75`     |    `61`     |    `61.6`     |  `78.89`   |
 |                                          |             |             |             |             |               |            |
@@ -71,7 +71,7 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |             |   `LOOCV`   |   `75.7`    |   `65.2`    |    `61.6`     |   `76.8`   |
 |                                          |             |             |             |             |               |            |
 |       `Fourier(Spectral Entropy)`        |             |             |             |             |               |            |
-|                                          |    `ANN`    | `Accuracy`  |   `68.9`    |   `67.5`    |               |            |
+|                                          |    `ANN`    | `Accuracy`  |   `70.5`    |   `63.8`    |    `56.8`     |  `71.03`   |
 |                                          |             |             |             |             |               |            |
 |                                          |    `SVC`    | `Accuracy`  |    `72`     |   `63.2`    |    `64.8`     |   `69.4`   |
 |                                          |             |             |             |             |               |            |
