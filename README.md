@@ -8,7 +8,7 @@ It is difficult to look at the EEG signal and identify the state of Human mind. 
 
 <br>
 <center>
-<img src ="Assets/image.gif"  width=600 height=400>  
+<img src ="Assets/steps.png"  width=300 height=200>  
 </center>
 <br>
 

@@ -3,6 +3,7 @@ import numpy as np
 import pickle
 import os
 
+
 path = './STFTData/'
 
 all_data= os.listdir(path)
@@ -18,6 +19,10 @@ for data in all_data:
             final_data_sfft.append(sub[i][0])
             final_labels_sfft.append(sub[i][1])
 
+
+np.array(final_data_sfft).shape
+
+np.array(final_labels_sfft).shape
 
 np.save(path + 'SFFTFinalData', np.array(final_data_sfft), allow_pickle=True, fix_imports=True)
 
