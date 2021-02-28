@@ -2,17 +2,17 @@
 
 ## AMIGOS DATASET (A dataset for affect, personality and mood research on individuals and groups)
 
-## PROBLEM STATEMENT:-
+## GETTING STARTED:-
 
-It is difficult to look at the EEG signal and identify the state of Human mind. In this problem statement a classifier needs to be trained with AMIGOS dataset to predict the state of mind. The state of mind is predicted in terms of valence, arousal. which can further be used to predict the state of mind in terms of expression.
+It is difficult to look at the EEG signal and identify the state of Human mind. In this problem statement a classifier needs to be trained with AMIGOS dataset to predict the state of mind. The state of mind is predicted in terms of valence, arousal, dominance and liking which can further be used to predict the state of mind in terms of expression.
 
 <br>
 <center>
-<img src ="Assets/steps.png"  width=300 height=200>  
+<img src ="Assets/steps.png"  width=500 height=400>  
 </center>
 <br>
 
-## PROCEDURE TO SOLVE THE PROBLEM:-
+## PROCEDURE:-
 
 The Preprocessed Data is used for training the classifier.
 Steps involve in training the dataset:-
@@ -46,14 +46,8 @@ Energy and Entropy is computed for each feature band from each channel
 - **For wavelet features `Total Wavelet Entropy` is calculated**
 - **For fourier features `Spectral Entropy` is calculated**
 
-## Usage
-
-- `DataConversion`: Code to convert the amigos dataset from `matlab files` into `csv files`
-- `Dataset`: `Transformed data` to all users in `pickle` format
-- `Fourier`: Code for `fourier transformation`
-- `Wavelet`: Code for `wavelet transformation`
-- `Src`: Code to apply the wavelet and fourier transformation on raw data and store the data into dataset
-- `Models`: Code for different `Machine Learning` and `Deep Learning` `methods` applied
+**Short-Time Fourier Transform (STFT)**
+- Short-time Fourier transform (STFT) is a sequence of Fourier transforms of a windowed signal.
 
 ## Results
 
@@ -62,7 +56,7 @@ Energy and Entropy is computed for each feature band from each channel
 |       **Preprocessing Technique**        | **Methods** | **Metrics** | **Arousal** | **Valence** | **Dominance** | **Liking** |
 | :--------------------------------------: | :---------: | :---------: | :---------: | :---------: | :-----------: | :--------: |
 |     `Wavelet(Total Wavelet Entropy)`     |             |             |             |             |               |            |
-|                                          |    `ANN`    | `Accuracy`  |   `73.5`    |   `64.7`    |   `60.08`     |  `76.3`    |
+|                                          |    `ANN`    | `Accuracy`  |   `73.5`    |   `64.7`    |    `60.08`    |   `76.3`   |
 |                                          |             |             |             |             |               |            |
 |                                          |    `SVC`    | `Accuracy`  |    `75`     |    `61`     |    `61.6`     |  `78.89`   |
 |                                          |             |             |             |             |               |            |
@@ -92,6 +86,15 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |  `CNN 1D`   | `Accuracy`  |   `95.45`   |   `94.59`   |    `94.41`    |  `94.88`   |
 |                                          |             |             |             |             |               |            |
 |                                          |  `CNN 2D`   | `Accuracy`  |   `97.72`   |   `96.38`   |    `96.65`    |  `97.51`   |
+
+## Usage
+
+- `DataConversion`: Code to convert the amigos dataset from `matlab files` into `csv files`
+- `Dataset`: `Transformed data` to all users in `pickle` format
+- `Fourier`: Code for `fourier transformation`
+- `Wavelet`: Code for `wavelet transformation`
+- `Src`: Code to apply the wavelet and fourier transformation on raw data and store the data into dataset
+- `Models`: Code for different `Machine Learning` and `Deep Learning` `methods` applied
 
 ## Contributers
 
