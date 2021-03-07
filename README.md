@@ -11,6 +11,10 @@ It is difficult to look at the EEG signal and identify the state of Human mind. 
 <img src ="Assets/steps.png"  width=500 height=400>  
 </center>
 <br>
+<center>
+<img src ="Assets/down_final.png"  width=800 height=400>  
+</center>
+<br>
 
 ## PROCEDURE:-
 
@@ -83,9 +87,9 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |    `RVC`    | `Accuracy`  |   `77.4`    |   `61.3`    |     `59`      |    `78`    |
 |                                          |             |             |             |             |               |            |
 | `Short Time Fast Fourier Transformation` |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `95.45`   |   `94.59`   |    `94.41`    |  `94.88`   |
+|                                          |  `CNN 1D`   | `Accuracy`  |   `90.32`   |   `89.77`   |    `90.36`    |  `91.88`   |
 |                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `97.72`   |   `96.38`   |    `96.65`    |  `97.51`   |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `93.09`   |   `90.11`   |    `91.94`    |   `93.95`  |
 
 ## Usage
 
