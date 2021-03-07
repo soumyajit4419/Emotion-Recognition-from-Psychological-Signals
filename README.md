@@ -87,9 +87,9 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |    `RVC`    | `Accuracy`  |   `77.4`    |   `61.3`    |     `59`      |    `78`    |
 |                                          |             |             |             |             |               |            |
 | `Short Time Fast Fourier Transformation` |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `90.32`   |   `89.77`   |    `90.36`    |  `91.88`   |
+|                                          |  `CNN 1D`   | `Accuracy`  |   `91.45`   |   `89.77`   |    `90.36`    |  `91.88`   |
 |                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `93.09`   |   `90.11`   |    `91.94`    |   `93.95`  |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `93.12`   |   `90.84`   |    `92.76`    |   `94.12`  |
 
 ## Usage
 
