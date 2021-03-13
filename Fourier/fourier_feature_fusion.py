@@ -33,7 +33,7 @@ def bin_power(chan, bands, Fs):
     """
 
     C = np.fft.fft(chan)
-    C = abs(C)
+    C = abs(C) ** 2
     Power = np.zeros(len(bands) - 1)
     
     for Freq_Index in range(0, len(bands) - 1):

@@ -8,10 +8,6 @@ It is difficult to look at the EEG signal and identify the state of Human mind. 
 
 <br>
 <center>
-<img src ="Assets/steps.png"  width=500 height=400>  
-</center>
-<br>
-<center>
 <img src ="Assets/down_final.png"  width=800 height=400>  
 </center>
 <br>
@@ -51,6 +47,7 @@ Energy and Entropy is computed for each feature band from each channel
 - **For fourier features `Spectral Entropy` is calculated**
 
 **Short-Time Fourier Transform (STFT)**
+
 - Short-time Fourier transform (STFT) is a sequence of Fourier transforms of a windowed signal.
 
 ## Results
@@ -89,7 +86,7 @@ Energy and Entropy is computed for each feature band from each channel
 | `Short Time Fast Fourier Transformation` |             |             |             |             |               |            |
 |                                          |  `CNN 1D`   | `Accuracy`  |   `91.45`   |   `92.93`   |    `93.47`    |  `93.76`   |
 |                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `94.22`   |   `93.78`   |    `94.04`    |   `94.44`  |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `94.22`   |   `93.78`   |    `94.04`    |  `94.44`   |
 
 ## Usage
 
