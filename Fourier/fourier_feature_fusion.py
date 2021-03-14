@@ -51,7 +51,7 @@ def power_spectrum(chan):
 
         
     fs = 128
-    bands = [1,4,8,13,30]
+    bands = [4,8,13,16,30,45] 
     
     p,pr= bin_power(chan,bands,fs)
     
