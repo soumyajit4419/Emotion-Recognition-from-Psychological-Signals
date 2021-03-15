@@ -88,8 +88,23 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |             |             |             |             |               |            |
 |                                          |  `CNN 2D`   | `Accuracy`  |   `81.34`   |   `73.21`   |    `75.00`    |  `83.97`   |
 |                                          |             |             |             |             |               |            |
+|        `Wavelet Transformation`          |             |             |             |             |               |            |
+|           `Non-Overlapping`              |  `CNN 1D`   | `Accuracy`  |   `78.64`   |   `69.55`   |    `73.13`    |  `81.11`   |
+|                                          |             |             |             |             |               |            |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `80.22`   |   `75.50`   |    `76.67`    |  `82.95`   |
+|                                          |             |             |             |             |               |            |
+|       `Wavelet Transformation`           |             |             |             |             |               |            |
+|           `Overlapping`                  |  `CNN 1D`   | `Accuracy`  |   `89.9`    |   `85.95`   |    `88.21`    |  `90.89`   |
+|                                          |             |             |             |             |               |            |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `92.3`    |   `90.35`   |    `91.51`    |  `93.45`   |
+|                                          |             |             |             |             |               |            |
 | `Short Time Fast Fourier Transformation` |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `91.45`   |   `92.93`   |    `93.47`    |  `93.76`   |
+|           `Non-Overlapping`              |  `CNN 1D`   | `Accuracy`  |   `71.33`   |   `66.56`   |    `65.66`    |  `80.18`   |
+|                                          |             |             |             |             |               |            |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `75.41`   |   `71.81`   |    `71.37`    |  `82.28`   |
+|                                          |             |             |             |             |               |            |
+| `Short Time Fast Fourier Transformation` |             |             |             |             |               |            |
+|           `Overlapping`                  |  `CNN 1D`   | `Accuracy`  |   `91.45`   |   `92.93`   |    `93.47`    |  `93.76`   |
 |                                          |             |             |             |             |               |            |
 |                                          |  `CNN 2D`   | `Accuracy`  |   `94.22`   |   `93.78`   |    `94.04`    |  `94.44`   |
 
