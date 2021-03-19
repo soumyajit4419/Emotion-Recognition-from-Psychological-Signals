@@ -83,10 +83,19 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |             |             |             |             |               |            |
 |                                          |    `RVC`    | `Accuracy`  |   `77.4`    |   `61.3`    |     `59`      |    `78`    |
 |                                          |             |             |             |             |               |            |
-|         `Feature Fusion CNN`             |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `76.21`   |   `67.76`   |    `65.79`    |  `81.71`   |
+|     `Wavelet(Relative Energy)`           |             |             |             |             |               |            |
+|                                          |    `RVC`    | `Accuracy`  |   `73.07`   |   `64.51`   |    `59.54`    |   `73.86`  |
 |                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `81.34`   |   `73.21`   |    `75.00`    |  `83.97`   |
+|                                          |    `SVC`    | `Accuracy`  |    `76.92`  |    `73.11`  |    `67.17`    |  `80.11`   |
+|                                          |             |             |             |             |               |            |
+|                                          |`Stacking Classifier`      | `Accuracy`  |   `75.96`   |   `76.34`     |    `70.22` |   `80.11`  |
+|                                          |             |             |             |             |               |            |
+|       `Fourier(Spectral Power)`          |             |             |             |             |               |            |
+|                                          |    `RVC`    | `Accuracy`  |   `73.07`   |   `63.44`   |    `63.35`    |   `77.27`  |
+|                                          |             |             |             |             |               |            |
+|                                          |    `SVC`    | `Accuracy`  |    `80.76`  |    `68.81`  |    `63.35`    |  `77.27`   |
+|                                          |             |             |             |             |               |            |
+|                                          |`Stacking Classifier`      | `Accuracy`  |   `71.15`   |   `60.21`     |    `72.51` |   `78.97`  |
 |                                          |             |             |             |             |               |            |
 |        `Wavelet Transformation [Non-Overlapping]`      |             |             |             |               |            |            |
 |                                          |  `ANN`      | `Accuracy`  |   `81.80`   |   `75.65`   |    `78.97`    |  `83.95`   |
@@ -115,6 +124,20 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |  `CNN 1D`   | `Accuracy`  |   `91.45`   |   `92.93`   |    `93.47`    |  `93.76`   |
 |                                          |             |             |             |             |               |            |
 |                                          |  `CNN 2D`   | `Accuracy`  |   `94.22`   |   `93.78`   |    `94.04`    |  `94.44`   |
+|                                          |             |             |             |             |               |            |
+| `Feature Fusion [Non-Overlapping]`       |             |             |             |             |               |            |
+|                                          |  `ANN`      | `Accuracy`  |   `84.41`   |   `78.76`   |    `81.09`    |  `85.45`   |
+|                                          |             |             |             |             |               |            |
+|                                          |  `CNN 1D`   | `Accuracy`  |   `78.30`   |   `69.67`   |    `70.09`    |  `80.65`   |
+|                                          |             |             |             |             |               |            |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `81.79`   |   `75.59`   |    `78.67`    |  `84.13`   |
+|                                          |             |             |             |             |               |            |
+| `Feature Fusion [Overlapping]`           |             |             |             |             |               |            |
+|                                          |  `ANN`      | `Accuracy`  |   `95.38`   |   `95.69`   |    `96.15`    |  `96.76`   |
+|                                          |             |             |             |             |               |            |
+|                                          |  `CNN 1D`   | `Accuracy`  |   `93.66`   |   `93.14`   |    `92.62`    |  `92.46`   |
+|                                          |             |             |             |             |               |            |
+|                                          |  `CNN 2D`   | `Accuracy`  |   `96.63`   |   `95.87`   |    `96.30`    |  `96.77`   |
 
 ## Usage
 
