@@ -56,6 +56,11 @@ Energy and Entropy is computed for each feature band from each channel
 
 |       **Preprocessing Technique**        | **Methods** | **Metrics** | **Arousal** | **Valence** | **Dominance** | **Liking** |
 | :--------------------------------------: | :---------: | :---------: | :---------: | :---------: | :-----------: | :--------: |
+|                                          |             |             |             |             |               |            |
+|                                          |             |             |             |             |               |            |
+|                                                          | 40 USERS||||                                                       |
+|                                          |             |             |             |             |               |            |
+|                                          |             |             |             |             |               |            |
 |     `Wavelet(Total Wavelet Entropy)`     |             |             |             |             |               |            |
 |                                          |    `ANN`    | `Accuracy`  |   `73.5`    |   `64.7`    |    `60.08`    |   `76.3`   |
 |                                          |             |             |             |             |               |            |
@@ -83,6 +88,10 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |             |             |             |             |               |            |
 |                                          |    `RVC`    | `Accuracy`  |   `77.4`    |   `61.3`    |     `59`      |    `78`    |
 |                                          |             |             |             |             |               |            |
+|                                          |             |             |             |             |               |            |
+|                                                          | 20 USERS||||                                                      
+|                                          |             |             |             |             |               |            |
+|                                          |             |             |             |             |               |            |
 |     `Wavelet(Relative Energy)`           |             |             |             |             |               |            |
 |                                          |    `RVC`    | `Accuracy`  |   `73.07`   |   `64.51`   |    `59.54`    |   `73.86`  |
 |                                          |             |             |             |             |               |            |
@@ -96,6 +105,13 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |    `SVC`    | `Accuracy`  |    `80.76`  |    `68.81`  |    `63.35`    |  `77.27`   |
 |                                          |             |             |             |             |               |            |
 |                                          |`Stacking Classifier`      | `Accuracy`  |   `71.15`   |   `60.21`     |    `72.51` |   `78.97`  |
+|                                          |             |             |             |             |               |            |
+|       `Feature_Fusion(Wavelet Energy + Spectral Power)`|             |             |             |               |            |            |
+|                                          |    `RVC`    | `Accuracy`  |   `75.00`   |   `63.44`   |    `66.41`    |   `75.00`  |
+|                                          |             |             |             |             |               |            |
+|                                          |    `SVC`    | `Accuracy`  |    `77.88`  |    `67.74`  |    `74.04`    |  `80.68`   |
+|                                          |             |             |             |             |               |            |
+|                                          |`Stacking Classifier`      | `Accuracy`  |   `80.77`   |   `69.89`     |    `71.75` |   `78.40`  |
 |                                          |             |             |             |             |               |            |
 |        `Wavelet Transformation [Non-Overlapping]`      |             |             |             |               |            |            |
 |                                          |  `ANN`      | `Accuracy`  |   `81.80`   |   `75.65`   |    `78.97`    |  `83.95`   |
