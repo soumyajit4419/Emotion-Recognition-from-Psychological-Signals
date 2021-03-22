@@ -54,11 +54,12 @@ Energy and Entropy is computed for each feature band from each channel
 
 ### Results on Arousal,Valence,Dominance And Liking:-
 
+<h2>40 USERS </h2>
+
 |       **Preprocessing Technique**        | **Methods** | **Metrics** | **Arousal** | **Valence** | **Dominance** | **Liking** |
 | :--------------------------------------: | :---------: | :---------: | :---------: | :---------: | :-----------: | :--------: |
 |                                          |             |             |             |             |               |            |
 |                                          |             |             |             |             |               |            |
-|                                                          | 40 USERS||||                                                       |
 |                                          |             |             |             |             |               |            |
 |                                          |             |             |             |             |               |            |
 |     `Wavelet(Total Wavelet Entropy)`     |             |             |             |             |               |            |
@@ -88,72 +89,76 @@ Energy and Entropy is computed for each feature band from each channel
 |                                          |             |             |             |             |               |            |
 |                                          |    `RVC`    | `Accuracy`  |   `77.4`    |   `61.3`    |     `59`      |    `78`    |
 |                                          |             |             |             |             |               |            |
-|                                          |             |             |             |             |               |            |
-|                                                          | 20 USERS||||                                                      
-|                                          |             |             |             |             |               |            |
-|                                          |             |             |             |             |               |            |
-|     `Wavelet(Relative Energy)`           |             |             |             |             |               |            |
-|                                          |    `RVC`    | `Accuracy`  |   `73.07`   |   `64.51`   |    `59.54`    |   `73.86`  |
-|                                          |             |             |             |             |               |            |
-|                                          |    `SVC`    | `Accuracy`  |    `76.92`  |    `73.11`  |    `67.17`    |  `80.11`   |
-|                                          |             |             |             |             |               |            |
-|                                          |`Stacking Classifier`      | `Accuracy`  |   `75.96`   |   `76.34`     |    `70.22` |   `80.11`  |
-|                                          |             |             |             |             |               |            |
-|       `Fourier(Spectral Power)`          |             |             |             |             |               |            |
-|                                          |    `RVC`    | `Accuracy`  |   `73.07`   |   `63.44`   |    `63.35`    |   `77.27`  |
-|                                          |             |             |             |             |               |            |
-|                                          |    `SVC`    | `Accuracy`  |    `80.76`  |    `68.81`  |    `63.35`    |  `77.27`   |
-|                                          |             |             |             |             |               |            |
-|                                          |`Stacking Classifier`      | `Accuracy`  |   `71.15`   |   `60.21`     |    `72.51` |   `78.97`  |
-|                                          |             |             |             |             |               |            |
-|       `Feature_Fusion(Wavelet Energy + Spectral Power)`|             |             |             |               |            |            |
-|                                          |    `RVC`    | `Accuracy`  |   `75.00`   |   `63.44`   |    `66.41`    |   `75.00`  |
-|                                          |             |             |             |             |               |            |
-|                                          |    `SVC`    | `Accuracy`  |    `77.88`  |    `67.74`  |    `74.04`    |  `80.68`   |
-|                                          |             |             |             |             |               |            |
-|                                          |`Stacking Classifier`      | `Accuracy`  |   `80.77`   |   `69.89`     |    `71.75` |   `78.40`  |
-|                                          |             |             |             |             |               |            |
-|        `Wavelet Transformation [Non-Overlapping]`      |             |             |             |               |            |            |
-|                                          |  `ANN`      | `Accuracy`  |   `81.80`   |   `75.65`   |    `78.97`    |  `83.95`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `78.64`   |   `69.55`   |    `73.13`    |  `81.11`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `80.22`   |   `75.50`   |    `76.67`    |  `82.95`   |
-|                                          |             |             |             |             |               |            |
-|       `Wavelet Transformation [Overlapping]`           |             |             |             |               |            |            |
-|                                          |  `ANN`      | `Accuracy`  |   `93.28`   |   `91.05`   |    `91.59`    |  `93.36`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `89.9`    |   `85.95`   |    `88.21`    |  `90.89`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `92.3`    |   `90.35`   |    `91.51`    |  `93.45`   |
-|                                          |             |             |             |             |               |            |
-| `Short Time Fast Fourier Transformation [Non-Overlapping]` |         |             |             |               |            |            |
-|                                          |  `ANN`      | `Accuracy`  |   `65.00`   |   `55.60`   |    `60.32`    |  `79.95`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `71.33`   |   `66.56`   |    `65.66`    |  `80.18`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `75.41`   |   `71.81`   |    `71.37`    |  `82.28`   |
-|                                          |             |             |             |             |               |            |
-| `Short Time Fast Fourier Transformation [Overlapping]` |             |             |             |               |            |            |
-|                                          |  `ANN`      | `Accuracy`  |   `88.80`   |   `89.05`   |    `90.59`    |  `91.07`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `91.45`   |   `92.93`   |    `93.47`    |  `93.76`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `94.22`   |   `93.78`   |    `94.04`    |  `94.44`   |
-|                                          |             |             |             |             |               |            |
-| `Feature Fusion [Non-Overlapping]`       |             |             |             |             |               |            |
-|                                          |  `ANN`      | `Accuracy`  |   `84.41`   |   `78.76`   |    `81.09`    |  `85.45`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `78.30`   |   `69.67`   |    `70.09`    |  `80.65`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `81.79`   |   `75.59`   |    `78.67`    |  `84.13`   |
-|                                          |             |             |             |             |               |            |
-| `Feature Fusion [Overlapping]`           |             |             |             |             |               |            |
-|                                          |  `ANN`      | `Accuracy`  |   `95.38`   |   `95.69`   |    `96.15`    |  `96.76`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 1D`   | `Accuracy`  |   `93.66`   |   `93.14`   |    `92.62`    |  `92.46`   |
-|                                          |             |             |             |             |               |            |
-|                                          |  `CNN 2D`   | `Accuracy`  |   `96.63`   |   `95.87`   |    `96.30`    |  `96.77`   |
+|                                          |             |             |             |             |               |
+
+<h2>20 USERS</h2>
+
+|                **Preprocessing Technique**                 |      **Methods**      | **Metrics** | **Arousal** | **Valence** | **Dominance** | **Liking** |
+| :--------------------------------------------------------: | :-------------------: | :---------: | :---------: | :---------: | :-----------: | :--------: |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |                       |             |             |             |               |            |
+|                 `Wavelet(Relative Energy)`                 |                       |             |             |             |               |            |
+|                                                            |         `RVC`         | `Accuracy`  |   `73.07`   |   `64.51`   |    `59.54`    |  `73.86`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |         `SVC`         | `Accuracy`  |   `76.92`   |   `73.11`   |    `67.17`    |  `80.11`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            | `Stacking Classifier` | `Accuracy`  |   `75.96`   |   `76.34`   |    `70.22`    |  `80.11`   |
+|                                                            |                       |             |             |             |               |            |
+|                 `Fourier(Spectral Power)`                  |                       |             |             |             |               |            |
+|                                                            |         `RVC`         | `Accuracy`  |   `73.07`   |   `63.44`   |    `63.35`    |  `77.27`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |         `SVC`         | `Accuracy`  |   `80.76`   |   `68.81`   |    `63.35`    |  `77.27`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            | `Stacking Classifier` | `Accuracy`  |   `71.15`   |   `60.21`   |    `72.51`    |  `78.97`   |
+|                                                            |                       |             |             |             |               |            |
+|     `Feature_Fusion(Wavelet Energy + Spectral Power)`      |                       |             |             |             |               |            |
+|                                                            |         `RVC`         | `Accuracy`  |   `75.00`   |   `63.44`   |    `66.41`    |  `75.00`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |         `SVC`         | `Accuracy`  |   `77.88`   |   `67.74`   |    `74.04`    |  `80.68`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            | `Stacking Classifier` | `Accuracy`  |   `80.77`   |   `69.89`   |    `71.75`    |  `78.40`   |
+|                                                            |                       |             |             |             |               |            |
+|         `Wavelet Transformation [Non-Overlapping]`         |                       |             |             |             |               |            |
+|                                                            |         `ANN`         | `Accuracy`  |   `81.80`   |   `75.65`   |    `78.97`    |  `83.95`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 1D`        | `Accuracy`  |   `78.64`   |   `69.55`   |    `73.13`    |  `81.11`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 2D`        | `Accuracy`  |   `80.22`   |   `75.50`   |    `76.67`    |  `82.95`   |
+|                                                            |                       |             |             |             |               |            |
+|           `Wavelet Transformation [Overlapping]`           |                       |             |             |             |               |            |
+|                                                            |         `ANN`         | `Accuracy`  |   `93.28`   |   `91.05`   |    `91.59`    |  `93.36`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 1D`        | `Accuracy`  |   `89.9`    |   `85.95`   |    `88.21`    |  `90.89`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 2D`        | `Accuracy`  |   `92.3`    |   `90.35`   |    `91.51`    |  `93.45`   |
+|                                                            |                       |             |             |             |               |            |
+| `Short Time Fast Fourier Transformation [Non-Overlapping]` |                       |             |             |             |               |            |
+|                                                            |         `ANN`         | `Accuracy`  |   `65.00`   |   `55.60`   |    `60.32`    |  `79.95`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 1D`        | `Accuracy`  |   `71.33`   |   `66.56`   |    `65.66`    |  `80.18`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 2D`        | `Accuracy`  |   `75.41`   |   `71.81`   |    `71.37`    |  `82.28`   |
+|                                                            |                       |             |             |             |               |            |
+|   `Short Time Fast Fourier Transformation [Overlapping]`   |                       |             |             |             |               |            |
+|                                                            |         `ANN`         | `Accuracy`  |   `88.80`   |   `89.05`   |    `90.59`    |  `91.07`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 1D`        | `Accuracy`  |   `91.45`   |   `92.93`   |    `93.47`    |  `93.76`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 2D`        | `Accuracy`  |   `94.22`   |   `93.78`   |    `94.04`    |  `94.44`   |
+|                                                            |                       |             |             |             |               |            |
+|             `Feature Fusion [Non-Overlapping]`             |                       |             |             |             |               |            |
+|                                                            |         `ANN`         | `Accuracy`  |   `84.41`   |   `78.76`   |    `81.09`    |  `85.45`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 1D`        | `Accuracy`  |   `78.30`   |   `69.67`   |    `70.09`    |  `80.65`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 2D`        | `Accuracy`  |   `81.79`   |   `75.59`   |    `78.67`    |  `84.13`   |
+|                                                            |                       |             |             |             |               |            |
+|               `Feature Fusion [Overlapping]`               |                       |             |             |             |               |            |
+|                                                            |         `ANN`         | `Accuracy`  |   `95.38`   |   `95.69`   |    `96.15`    |  `96.76`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 1D`        | `Accuracy`  |   `93.66`   |   `93.14`   |    `92.62`    |  `92.46`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |       `CNN 2D`        | `Accuracy`  |   `96.63`   |   `95.87`   |    `96.30`    |  `96.77`   |
 
 ## Usage
 
