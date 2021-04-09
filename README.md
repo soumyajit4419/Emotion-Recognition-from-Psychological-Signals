@@ -119,7 +119,11 @@ Energy and Entropy is computed for each feature band from each channel
 |                                                            | `Stacking Classifier` | `Accuracy`  |   `80.77`   |   `69.89`   |    `71.75`    |  `78.40`   |
 |                                                            |                       |             |             |             |               |            |
 |         `Wavelet Transformation [Non-Overlapping]`         |                       |             |             |             |               |            |
-|                                                            |         `ANN`         | `Accuracy`  |   `81.80`   |   `75.65`   |    `78.97`    |  `83.95`   |
+|                                                            |      `ANN (ELU)`      | `Accuracy`  |   `81.80`   |   `75.65`   |    `78.97`    |  `83.95`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |     `ANN (ReLU)`      | `Accuracy`  |   `83.66`   |   `78.93`   |    `80.94`    |  `84.66`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |    `ANN (Leaky ReLU)` | `Accuracy`  |   `83.89`   |   `78.79`   |    `80.92`    |  `84.73`   |
 |                                                            |                       |             |             |             |               |            |
 |                                                            |       `CNN 1D`        | `Accuracy`  |   `78.64`   |   `69.55`   |    `73.13`    |  `81.11`   |
 |                                                            |                       |             |             |             |               |            |
@@ -133,7 +137,11 @@ Energy and Entropy is computed for each feature band from each channel
 |                                                            |       `CNN 2D`        | `Accuracy`  |   `92.3`    |   `90.35`   |    `91.51`    |  `93.45`   |
 |                                                            |                       |             |             |             |               |            |
 | `Short Time Fast Fourier Transformation [Non-Overlapping]` |                       |             |             |             |               |            |
-|                                                            |         `ANN`         | `Accuracy`  |   `65.00`   |   `55.60`   |    `60.32`    |  `79.95`   |
+|                                                            |         `ANN (ELU)`   | `Accuracy`  |   `65.00`   |   `55.60`   |    `60.32`    |  `79.95`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |     `ANN (ReLU)`      | `Accuracy`  |   `74.40`   |   `62.01`   |    `66.48`    |  `81.86`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |    `ANN (Leaky ReLU)` | `Accuracy`  |   `75.50`   |   `58.37`   |    `66.76`    |  `81.58`   |
 |                                                            |                       |             |             |             |               |            |
 |                                                            |       `CNN 1D`        | `Accuracy`  |   `71.33`   |   `66.56`   |    `65.66`    |  `80.18`   |
 |                                                            |                       |             |             |             |               |            |
@@ -147,7 +155,11 @@ Energy and Entropy is computed for each feature band from each channel
 |                                                            |       `CNN 2D`        | `Accuracy`  |   `94.22`   |   `93.78`   |    `94.04`    |  `94.44`   |
 |                                                            |                       |             |             |             |               |            |
 |             `Feature Fusion [Non-Overlapping]`             |                       |             |             |             |               |            |
-|                                                            |         `ANN`         | `Accuracy`  |   `84.41`   |   `78.76`   |    `81.09`    |  `85.45`   |
+|                                                            |       `ANN (ELU)`     | `Accuracy`  |   `84.41`   |   `78.76`   |    `81.09`    |  `85.45`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |     `ANN (ReLU)`      | `Accuracy`  |   `85.28`   |   `81.53`   |    `83.44`    |  `86.56`   |
+|                                                            |                       |             |             |             |               |            |
+|                                                            |    `ANN (Leaky ReLU)` | `Accuracy`  |   `85.47`   |   `81.87`   |    `84.04`    |  `86.63`   |
 |                                                            |                       |             |             |             |               |            |
 |                                                            |       `CNN 1D`        | `Accuracy`  |   `78.30`   |   `69.67`   |    `70.09`    |  `80.65`   |
 |                                                            |                       |             |             |             |               |            |
