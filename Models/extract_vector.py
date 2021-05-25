@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 import os
 
-path = '../Dataset/EntropyCompleteDataset/'
+path = '../../Dataset/EntropyCompleteDataset/'
 
 
 def getFourierStdData(type='eeg'):
