@@ -168,7 +168,7 @@ Energy and Entropy is computed for each feature band from each channel
 |                                                            |       `CNN 2D`        | `Accuracy`  |   `80.22`   |   `75.50`   |    `76.67`    |  `82.95`   |
 |                                                            |                       |             |             |             |               |            |
 |           `Wavelet Transformation [Overlapping]`           |                       |             |             |             |               |            |
-|                                                            |          `SVC`        | `Accuracy`  |   `87.05`   |   ``   |    ``    |  ``   |
+|                                                            |          `SVC`        | `Accuracy`  |   `87.05`   |   `83.22`   |    `85.18`    |  `88.55`   |
 |                                                            |                       |             |             |             |               |            |
 |                                                            |         `ANN`         | `Accuracy`  |   `93.28`   |   `91.05`   |    `91.59`    |  `93.36`   |
 |                                                            |                       |             |             |             |               |            |
@@ -190,7 +190,7 @@ Energy and Entropy is computed for each feature band from each channel
 |                                                            |       `CNN 2D`        | `Accuracy`  |   `75.41`   |   `71.81`   |    `71.37`    |  `82.28`   |
 |                                                            |                       |             |             |             |               |            |
 |   `Short Time Fast Fourier Transformation [Overlapping]`   |                       |             |             |             |               |            |
-|                                                            |          `SVC`        | `Accuracy`  |   ``   |   ``   |    ``    |  ``   |
+|                                                            |          `SVC`        | `Accuracy`  |   `84.56`   |   `88.21`   |    ``    |  `91.00`   |
 |                                                            |                       |             |             |             |               |            |
 |                                                            |         `ANN`         | `Accuracy`  |   `88.80`   |   `89.05`   |    `90.59`    |  `91.07`   |
 |                                                            |                       |             |             |             |               |            |
@@ -212,7 +212,7 @@ Energy and Entropy is computed for each feature band from each channel
 |                                                            |       `CNN 2D`        | `Accuracy`  |   `81.79`   |   `75.59`   |    `78.67`    |  `84.13`   |
 |                                                            |                       |             |             |             |               |            |
 |               `Feature Fusion [Overlapping]`               |                       |             |             |             |               |            |
-|                                                            |          `SVC`        | `Accuracy`  |   ``   |   ``   |    ``    |  ``   |
+|                                                            |          `SVC`        | `Accuracy`  |   ``   |   ``   |    ``    |  `89.65`   |
 |                                                            |                       |             |             |             |               |            |
 |                                                            |         `ANN`         | `Accuracy`  |   `95.38`   |   `95.69`   |    `96.15`    |  `96.76`   |
 |                                                            |                       |             |             |             |               |            |
